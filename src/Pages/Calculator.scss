@@ -1,0 +1,24 @@
+.calculator{
+    border-radius: 39px;
+    background: #F7F8FB;;
+box-shadow: 60px 100px 70px rgba(0, 163, 255, 0.65);
+    .equal-to-button{
+       @apply bg-[#19ACFF] rounded-xl flex items-center justify-center h-24 w-16 text-white mt-4 cursor-pointer;
+       box-shadow: -9px 13px 23px rgba(0, 163, 255, 0.65), inset -3px 4px 11px #B0DFFF;
+    }
+    .common-button{
+        @apply bg-white rounded-2xl border-white flex items-center justify-center h-10 w-16 cursor-pointer;
+    }   
+
+    .back-space{
+     @apply   bg-white rounded-xl border-white flex items-center justify-center h-16 w-16 text-[#858585] cursor-pointer;
+    }
+    .blue-button{
+        @apply bg-[#ADE2FF] rounded-xl flex items-center justify-center w-16 text-[#109DFF] cursor-pointer;
+    }
+
+    .number-button{
+        @apply bg-white rounded-xl border-white flex items-center justify-center h-16 w-16 text-[#109DFF] cursor-pointer;
+    }
+}
+

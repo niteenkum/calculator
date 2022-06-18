@@ -1,12 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ReactDOM from "react-dom/client";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Calculator from "./Pages/Calculator";
 
 function App() {
   return (
-    <div className="App">
 
-    </div>
+<BrowserRouter>
+<Routes>
+  <Route path="/" element={<Calculator />}>
+    <Route path="/calculator" element={<Calculator />} />
+    </Route>
+</Routes>
+</BrowserRouter>
   );
 }
 
